@@ -1,16 +1,55 @@
-# React + Vite
+# Crypto SaaS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+基于 React + Vite 构建的加密货币 SaaS 应用。
 
-Currently, two official plugins are available:
+## 快速开始
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 本地开发
 
-## React Compiler
+```bash
+# 安装依赖
+npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 启动开发服务器
+npm run dev
 
-## Expanding the ESLint configuration
+# 构建生产版本
+npm run build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 预览生产构建
+npm run preview
+```
+
+## 部署
+
+### 部署到 GitHub + Vercel
+
+详细的部署步骤请查看 [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+**快速步骤：**
+1. 在 VS Code 中使用源代码管理面板发布到 GitHub
+2. 在 [Vercel](https://vercel.com) 导入 GitHub 仓库
+3. 点击部署，完成！
+
+## 技术栈
+
+- **React 19** - UI 框架
+- **Vite 7** - 构建工具
+- **ESLint** - 代码检查
+
+## 项目结构
+
+```
+crypto-saas/
+├── src/          # 源代码
+├── public/       # 静态资源
+├── dist/         # 构建输出（自动生成）
+└── index.html    # 入口 HTML
+```
+
+## 开发说明
+
+本项目使用 Vite 作为构建工具，支持：
+- ⚡ 快速热模块替换 (HMR)
+- 🎯 优化的生产构建
+- 📦 自动代码分割
